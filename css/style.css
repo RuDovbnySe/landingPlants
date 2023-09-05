@@ -1,0 +1,32 @@
+/*<!-- Colors -->*/
+/*@white: #FFFFFF;*/
+/*@green-promo: #05FF00;*/
+/*@green: #54C352;*/
+/*@black: #000000;*/
+/*@grey-dark: #333333;*/
+/*@grey-light: #EFEFEF;*/
+/*@grey: #CDCDCD;*/
+/*@red: #FF0000;*/
+/*@back: #165166;*/
+
+:root {
+    --white: #FFFFFF;
+    --green-promo: #05FF00;
+    --green: #54C352;
+    --black: #000000;
+    --grey-dark: #333333;
+    --grey-light: #EFEFEF;
+    --grey: #CDCDCD;
+    --red: #FF0000;
+    --back: #165166;
+}
+
+.container {
+    width: 1625px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    background-color: var(--back);
+}
