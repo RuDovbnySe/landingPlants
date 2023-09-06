@@ -25,7 +25,7 @@
     width: 1625px;
     margin-right: auto;
     margin-left: auto;
-    color: var(--white);
+    /*color: var(--white);*/
 }
 
 li, a {
@@ -59,4 +59,34 @@ li, a {
 .promo__banner {
     margin-top: -300px;
     margin-right: -148px;
+}
+
+.lily {
+    display: grid;
+    grid-template-columns: 5fr 4fr 3fr;
+}
+
+.lily__item--alocasia {
+    margin-right: 137px;
+}
+
+.lily__item--peace {
+    margin-right: 190px;
+}
+
+.garden {
+    background-color: var(--back);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+}
+
+.quality {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+.footer {
+    background-color: var(--back);
 }
