@@ -13,6 +13,7 @@
     --white: #FFFFFF;
     --green-promo: #05FF00;
     --green: #54C352;
+    --green-soc: #78A677;
     --black: #000000;
     --grey-dark: #333333;
     --grey-light: #EFEFEF;
@@ -34,51 +35,359 @@ li, a {
     color: inherit;
 }
 
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    width: 205px;
+    height: 51px;
+    background-color: var(--green);
+    font-size: 22px;
+    text-align: center;
+    padding-top: 29px;
+    border: none;
+}
+
 .header {
     background-color: var(--back);
+    padding-top: 34px;
+}
+
+.header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 536px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: var(--white);
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.account__list {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
 }
 
 .promo {
     background-color: var(--back);
+    margin-top: 140px;
+    color: var(--white);
+}
+
+.promo__title {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 82px;
+    line-height: 90px;
+    margin-bottom: 30px;
+}
+
+.promo__title--green {
+    color: var(--green-promo);
+}
+
+.achievement__text {
+    color: var(--green-promo);
 }
 
 .promo__box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 200px;
+    gap: 180px;
+}
+
+.promo__star {
+    margin-left: -45px;
+}
+
+.promo__star-2 {
+    margin-left: -60px;
+}
+
+.promo__desk {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.promo__buttons {
+    margin-top: 45px;
+    display: flex;
+    gap: 85px;
+}
+
+.promo__btn--empty {
+    font-size: 22px;
+    text-align: center;
+    padding-top: 29px;
+    margin-right: 15px;
+}
+
+.promo__btn-txt {
+    margin-right: 15px;
 }
 
 .achievement {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 115px;
+    column-gap: 100px;
     grid-template-rows: 1fr 1fr;
     row-gap: 17px;
+    margin-top: 145px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.achievement__number {
+    color: var(--green);
+    font-size: 52px;
+    line-height: 36px;
+}
+
+.achievement__text {
+    color: var(--white);
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 36px;
 }
 
 .promo__banner {
-    margin-top: -300px;
+    margin-top: -350px;
     margin-right: -148px;
 }
 
+.social {
+    margin-top: 100px
+}
+
+.social__arrow {
+    display: flex;
+    gap: 40px;
+}
+
+.social__text {
+    color: var(--white);
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 32px;
+}
+
+.social__net {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 105px;
+    color: var(--green-soc);
+}
+
+.social__link {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 50px;
+}
+
+.general__tittle {
+    margin-top: 150px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 52px;
+    text-align: center;
+}
+
+.general__disk {
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+}
+
 .lily {
-    display: grid;
-    grid-template-columns: 5fr 4fr 3fr;
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-top: 240px;
+}
+
+.lily__back {
+    position: relative;
+    background-color: var(--back);
+    color: var(--white);
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.lily__back--alocasia {
+    height: 500px;
+}
+
+.lily__back--peace {
+    height: 406px;
+}
+
+.lily__back--camille {
+    height: 300px;
+}
+
+.lily__img {
+    position: absolute;
+}
+
+.lily__img--alocasia {
+    top: -160px;
+    left: 50px;
+}
+
+.lily__img--peace {
+    top: -175px;
+    left: 60px;
+}
+
+.lily__img--camille {
+    top: -120px;
+    left: 35px;
 }
 
 .lily__item--alocasia {
     margin-right: 137px;
+    width: 500px;
 }
 
 .lily__item--peace {
     margin-right: 190px;
+    width: 405px;
+}
+
+.lily__item--camille {
+    width: 300px;
+}
+
+.lily__tittle {
+    text-align: center;
+    font-weight: bold;
+}
+
+.lily__tittle--alocasia {
+    font-size: 30px;
+    padding-top: 170px;
+}
+
+.lily__tittle--peace {
+    font-size: 24px;
+    padding-top: 170px;
+}
+
+.lily__tittle--camille {
+    font-size: 20px;
+    padding-top: 110px;
+}
+
+.lily__description {
+    text-align: center;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.lily__description--alocasia {
+    margin-top: 10px;
+    margin-left: 38px;
+    margin-right: 38px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.lily__description--peace {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.lily__description--camille {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+
+.lily__chart {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 125px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    background-color: var(--white);
+    color: var(--red);
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.lily__price {
+    margin-left: 15px;
+    margin-right: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.lily__add-cart {
+    position: absolute;
+    left: 125px;
+    width: 160px;
+    border-radius: 25px;
+    color: var(--white);
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .garden {
     background-color: var(--back);
+    margin-top: 270px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: var(--white);
+}
+
+.garden__box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 200px;
+}
+
+.garden__left {
+    /*position: absolute;*/
+}
+
+.garden__img-flowers {
+    position: relative;
+    top: 375px;
+}
+
+.garden__img-svg {
+    position: relative;
+    top: -165px;
+    left: -330px;
+    z-index: 1;
+}
+
+.garden__img-women {
+    position: relative;
+    top: -450px;
+    left: 160px;
 }
 
 .quality {

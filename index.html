@@ -6,6 +6,7 @@
     <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -105,16 +106,16 @@
             <div class="header__promo promo">
                 <div class="promo__box">
                     <section class="promo__info">
-                        <img src="img/star.png" width="96" height="96" alt="star">
+                        <img class="promo__star" src="img/star.png" width="96" height="96" alt="star">
                         <h1 class="promo__title">
                             Make green your favorite home &
                             <span class="promo__title promo__title--green">Living better</span>
                         </h1>
-                        <p class="promo_desk">Very beautiful plant decoration to make our lives healthy and the home
+                        <p class="promo__desk">Very beautiful plant decoration to make our lives healthy and the home
                             environment so that the almosphere become calmer.</p>
                         <div class="promo__buttons">
                             <a class="promo__btn btn" href="#nowhere">Shop now</a>
-                            <a class="promo__btn btn promo__btn--empty" href="#howhere">
+                            <a class="promo__btn promo__btn--empty" href="#howhere">
                                 <span class="promo__btn-txt">Explore Now</span>
                                 <svg width="39" height="16" viewBox="0 0 39 16" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +134,7 @@
                         </div>
                     </section>
                     <section class="promo__img">
-                        <img src="img/stars_double.png" width="120" height="120" alt="stars">
+                        <img class="promo__star-2" src="img/stars_double.png" width="120" height="120" alt="stars">
                         <img class="promo__banner" src="img/main_plant.png" width="872" height="1199" alt="plant">
                     </section>
                 </div>
@@ -172,19 +173,23 @@
                 literature</p>
             <div class="lily">
                 <div class="lily__item lily__item--alocasia">
-                    <div class="lily__back">
-                        <img src="img/plant_alocasia.png" width="395" height="322" alt="alocasia">
+                    <div class="lily__back lily__back--alocasia">
+                        <img class="lily__img lily__img--alocasia" src="img/plant_alocasia.png" width="395" height="322"
+                             alt="alocasia">
                         <h3 class="lily__tittle lily__tittle--alocasia">Alocasia polly</h3>
                         <p class="lily__description lily__description--alocasia">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                             ad minim veniam, quis nostrud</p>
-                        <div class="lily__price">$45.15</div>
-                        <button class="lily__add-cart btn">Add to cart</button>
+                        <div class="lily__chart">
+                            <div class="lily__price">$45.15</div>
+                            <button class="lily__add-cart btn">Add to cart</button>
+                        </div>
                     </div>
                 </div>
                 <div class="lily__item lily__item--peace">
-                    <div class="lily__back">
-                        <img src="img/plant_lily.png" width="299" height="318" alt="peace">
+                    <div class="lily__back lily__back--peace">
+                        <img class="lily__img lily__img--peace" src="img/plant_lily.png" width="299" height="318"
+                             alt="peace">
                         <h3 class="lily__tittle lily__tittle--peace">Peace lily</h3>
                         <p class="lily__description lily__description--peace">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -192,8 +197,9 @@
                     </div>
                 </div>
                 <div class="lily__item lily__item--camille">
-                    <div class="lily__back">
-                        <img src="img/plant_camille.png" width="246" height="200" alt="camille">
+                    <div class="lily__back lily__back--camille">
+                        <img class="lily__img lily__img--camille" src="img/plant_camille.png" width="246" height="200"
+                             alt="camille">
                         <h3 class="lily__tittle lily__tittle--camille">Camille Lily</h3>
                         <p class="lily__description lily__description--camille">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -201,30 +207,36 @@
                     </div>
                 </div>
             </div>
-            <div class="garden">
-                <div class="garden__left">
-                    <img src="img/garden_shovel.jpg" width="457" height="590" alt="garden">
-                    <svg width="299" height="146" viewBox="0 0 299 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="299" height="146" rx="35.5" fill="white" fill-opacity="0.2"/>
-                        <rect x="61" y="21" width="177" height="6" rx="3" fill="#D9D9D9"/>
-                        <rect x="61" y="14" width="177" height="6" rx="3" fill="#D9D9D9"/>
-                        <rect x="61" y="7" width="177" height="6" rx="3" fill="#D9D9D9"/>
-                        <rect x="61" y="133" width="177" height="6" rx="3" fill="#D9D9D9"/>
-                        <rect x="61" y="126" width="177" height="6" rx="3" fill="#D9D9D9"/>
-                        <rect x="61" y="119" width="177" height="6" rx="3" fill="#D9D9D9"/>
-                        <rect x="61" y="112" width="177" height="6" rx="3" fill="#D9D9D9"/>
-                    </svg>
-                    <img src="img/garden_watering.jpg" width="765" height="930" alt="watering">
-                </div>
-                <div class="garden__right">
-                    <h2 class="garden__tittle">If you love garden you’ll love Spring and our team</h2>
-                    <p class="garden__text">Welcome the new season with the plants that are raring to go. We’ve worked
-                        out which plants go well together so you can just plant up in your garden for instant impact and
-                        grow fastly.</p>
-                    <a class="garden__btn btn">View more</a>
+        </div>
+        <div class="garden">
+            <div class="container">
+                <div class="garden__box">
+                    <div class="garden__left">
+                        <img class="garden__img-flowers" src="img/garden_shovel.jpg" width="457" height="590" alt="garden">
+                        <svg class="garden__img-svg" width="299" height="146" viewBox="0 0 299 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="299" height="146" rx="35.5" fill="white" fill-opacity="0.2"/>
+                            <rect x="61" y="21" width="177" height="6" rx="3" fill="#D9D9D9"/>
+                            <rect x="61" y="14" width="177" height="6" rx="3" fill="#D9D9D9"/>
+                            <rect x="61" y="7" width="177" height="6" rx="3" fill="#D9D9D9"/>
+                            <rect x="61" y="133" width="177" height="6" rx="3" fill="#D9D9D9"/>
+                            <rect x="61" y="126" width="177" height="6" rx="3" fill="#D9D9D9"/>
+                            <rect x="61" y="119" width="177" height="6" rx="3" fill="#D9D9D9"/>
+                            <rect x="61" y="112" width="177" height="6" rx="3" fill="#D9D9D9"/>
+                        </svg>
+                        <img class="garden__img-women" src="img/garden_watering.jpg" width="765" height="930" alt="watering">
+                    </div>
+                    <div class="garden__right">
+                        <h2 class="garden__tittle">If you love garden you’ll love Spring and our team</h2>
+                        <p class="garden__text">Welcome the new season with the plants that are raring to go. We’ve worked
+                            out which plants go well together so you can just plant up in your garden for instant impact and
+                            grow fastly.</p>
+                        <a class="garden__btn btn">View more</a>
+                    </div>
                 </div>
             </div>
-            <div class="quality">
+        </div>
+        <div class="quality">
+            <div class="container">
                 <div class="quality__item quality__item--product">
                     <div class="quality__back">
                         <img src="img/quaolity_product.png" width="104" height="104" alt="product">
@@ -250,7 +262,9 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">
+        </div>
+        <div class="footer">
+            <div class="container">
                 <div class="collection">
                     <h2 class="footer__tittle">Collection of plants</h2>
                     <a class="footer__btn btn" href="#howhere">Shop now</a>
